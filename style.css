@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(#80FF72, #7EE8FA);
+}
+
+.bird{
+    width: 45%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+img{
+    max-width: 50%;
+    border-radius: 5%;
+}
+.container{display: flex;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+}
+audio{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    /* height: 2em; */
+    padding: 10px;
+
+}
+@media screen and (max-width: 1024px){
+    body{
+        font-size: 40px;
+    }
+    .bird{
+        width: 90%
+    }
+    img{
+        max-width: 100%;
+    }
+    audio{
+        width: 75%;
+        /* height: 150px; */
+        /* height: 150px; */
+
+    }
+}
