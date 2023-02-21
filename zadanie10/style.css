@@ -1,0 +1,22 @@
+td, th, table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    
+}
+th {
+    background: #ceebfa;
+}
+td{
+    width: 30px;
+}
+.lightGreen{
+    background-color: #e9f2de;
+}
+.mediumGreen{
+    background-color: #d6e3bf;
+}
+.green{
+    background-color: #c0d69e;
+}
