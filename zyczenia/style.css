@@ -79,7 +79,9 @@ li{
 #zyczenia p{
     font-size: 2em;
 }
-
+h1{
+    text-align: center;
+}
 
 /* Okno pierwszego wyboru */
 #wybor{
