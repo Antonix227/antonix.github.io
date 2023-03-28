@@ -1,38 +1,142 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="none">
-    <title>Adam Piper 3D</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: #303030;
-        }
-        .container{
-            display: flex;
-            height: 100vh;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-        }
-        p{
-            font-size: 2em;
-            color: #eee
-        }
-    </style>
+	<title>Wielaknocne przepisy </title>
+    <link rel="stylesheet" href="style.css">
+	<meta name="author" content="Adam Piper" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="container">    
-        <p>
-            Adam Piper 3D
-        </p>
-    </div>
+	<div class="title">
+	<h1>Wielkanocne przepisy</h1></div>
+	<main class="przepisy">
+	<div class="przepis" onclick="showPopup('przepis1-popup')">
+		<img src="babka.webp" alt="Babka marmurkowa">
+		<h3>Babka marmurkowa</h3>
+		<button class="button-more">Zobacz przepis</button>
+	</div>
+	<div class="przepis" onclick="showPopup('przepis2-popup')">
+		<img src="majonez.webp" alt="Easter Bread">
+		<h3>Majonez</h3>
+		<button class="button-more">Zobacz przepis</button>
+	</div>
+	<div class="przepis" onclick="showPopup('przepis3-popup')">
+		<img src="jaja.webp" alt="Easter Bread">
+		<h3>Jajka z majonezem</h3>
+		<button class="button-more">Zobacz przepis</button>
+	</div>
+	<div class="przepis" onclick="showPopup('przepis4-popup')">
+		<img src="salatka.webp" alt="Easter Bread">
+		<h3>Sałatka jajeczna z pieczarkami</h3>
+		<button class="button-more">Zobacz przepis</button>
+	</div>
+</main>
 
+
+	<!-- Popup for recipe 1 -->
+	<div class="popup" id="przepis1-popup">
+		<div class="popup-content">
+			<span class="popup-x" onclick="hidePopup('przepis1-popup')">&times;</span>
+			<h2>Babka marmurkowa</h2>
+			<p>Składniki: </p>
+			<ul>
+				<li>cukier - 290 g</li>
+				<li>cukier wanilinowy - 8 g</li>
+				<li>jajko - 6 szt.</li>
+				<li>masło - 300 g</li>
+				<li>mąka pszenna - 300 g</li>
+				<li>kakao - 30 g</li>
+				<li>proszek do pieczenia - 16 g</li>
+				<li>sól - 1 szczypta</li>
+			</ul>
+			<p>Przygotowanie:</p>
+			<ol>
+				<li>Natłuść masłem formę do babki i oprósz ją mąką oraz rozgrzej piekarnik do 175°C.</li>
+				<li> Piekarnik rozgrzać do 175°C.</li>
+				<li>Do pojemnika miksującego włożyć pokrojone na kawałki miękkie masło, cukier, cukier waniliowy i 1 szczyptę soli. </li>
+				<li>Ucieraj składniki oraz dodaj jajka. </li>
+				<li>Mąkę zmieszaj z proszkiem do pieczenia, przesiej do masy maślanej w pojemniku</li>
+				<li>wyrabiaj, aż powstanie gładkie ciasto. 
+				<li>Zagarnij je łopatką ze ścianek na dno pojemnika i ponownie mieszaj.</li>
+				<li>Połowę ciasta przelej do przygotowanej formy. Do pozostałego dodaj kakao i zgarnij ciasto ze ścianek na dno pojemnika oraz pomieszaj.</li>
+				<li>Ciemne ciasto wylej na jasne w formie babkowej.</li>
+				<li>Aby uzyskać efekt marmurkowania, przeciągnij widelcem przez obie warstwy ciasta, rysując nim zawijasy. </li>
+				<li>Piecz babkę 1 godzinę. </li>
+				<li>Sprawdź patyczkiem, czy dobrze się upiekła. W razie potrzeby zostaw jeszcze kilka minut w piekarniku.</li>
+			</ol>
+		</div>
+	</div>
+	<div class="popup" id="przepis2-popup">
+		<div class="popup-content">
+			<span class="popup-x" onclick="hidePopup('przepis2-popup')">&times;</span>
+			<h2>Majonez</h2>
+			<p>Składniki:</p>
+			<ul>
+				<li>żółtka – 3 szt.</li>
+				<li>musztarda Dijon – 1 łyżeczka</li>
+				<li>olej słonecznikowy – 150-200 ml</li>
+				<li>biały ocet winny – 1 łyżeczka</li>
+				<li>cukier – 1 szczypta</li>
+				<li>sól – 1 szczypta</li>
+			</ul>
+			<p>Przygotowanie:</p>
+			<ol>
+				<li>Jajka zanurzamy w szklance z wrzątkiem na ok. 10 sekund.</li>
+				<li>Miskę ustawiamy na kilku arkuszach ręcznika papierowego, by była stabilna. </li>
+				<li>Sparzone żółtka jaj przekładamy do miski i delikatnie podbijamy je za pomocą rózgi.</li>
+				<li>Dodajemy musztardę i ponownie ubijamy masę, by napowietrzyć bazę majonezu.</li>
+				<li>Stopniowo, cienkim strumieniem dolewamy olej, cały czas energicznie ubijając masę, aż stanie się gęsta i gładka.</li>
+				<li>Dodajemy ocet, cukier i sól. Mieszamy. Jeśli masa rozrzedzi się po dodaniu octu, dodajemy kolejną porcję oleju i ponownie ubijamy majonez.</li>
+				<li>Gotowy majonez przekładamy do zamykanego słoiczka. Przechowujemy w lodówce.</li>
+			</ol>
+		</div>
+	</div>
+	<div class="popup" id="przepis3-popup">
+		<div class="popup-content">
+			<span class="popup-x" onclick="hidePopup('przepis3-popup')">&times;</span>
+			<h2>Jajka z majonezem</h2>
+			<p>Składniki:</p>
+			<ul>
+				<li>jaja - 10 szt.</li>
+				<li>kawior czarny lub czerwony – 2 łyżki</li>
+				<li>koperek gałązki do dekoracji</li>
+				<li>Majonez - 4 łyżki</li>
+			</ul>
+			<p>Przygotowanie:</p>
+			<ol>
+				<li>Jaja ugotuj na twardo nie dłużej niż przez 8 minut.</li>
+				<li>Następnie ostudź je, obierz i przekrój na pół. Połówki jajek ułóż na talerzu lub półmisku.</li>
+				<li>Majonez dekoracyjnie nałóż na każdą połówkę jajka.</li>
+				<li>Gotowe jaja udekoruj kilkoma ziarenkami kawioru oraz małą gałązką koperku.</li>
+			</ol>
+		</div>
+	</div>
+	<div class="popup" id="przepis4-popup">
+		<div class="popup-content">
+			<span class="popup-x" onclick="hidePopup('przepis4-popup')">&times;</span>
+			<h2>Sałatka jajeczna z pieczarkami</h2>
+			<p>Składniki:</p>
+			<ul>
+				<li>jaja - 8 szt.</li>
+				<li>pieczrki – 100 gramów</li>
+				<li>woda - 2 łyżki</li>
+				<li>groszek zielony - 100 gramów</li>
+				<li>szczypioerek - 1 pęczek</li>
+				<li>ser żółty - 100 gramów</li>
+				<li>jogurt naturalny - 15 gramów</li>
+				<li>majonez - 1 łyżka</li>
+				<li>pieprz czarny mielony - 1 szczypta</li>
+				<li>bulion warzywny - 1 szt.</li>
+			</ul>
+			<p>Przygotowanie:</p>
+			<ol>
+				<li>Jaja ugotuj na twardo nie dłużej niż przez 8 minut.</li>
+				<li>Następnie ostudź je, obierz i przekrój na pół. Połówki jajek ułóż na talerzu lub półmisku.</li>
+				<li>Majonez dekoracyjnie nałóż na każdą połówkę jajka.</li>
+				<li>Gotowe jaja udekoruj kilkoma ziarenkami kawioru oraz małą gałązką koperku.</li>
+			</ol>
+		</div>
+	</div>
+    <script src="script.js"></script>
 </body>
 </html>
