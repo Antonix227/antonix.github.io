@@ -22,9 +22,7 @@
 .photo{
     height: 80vh;
     background-color: #2973b8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     transition: .5s;
 }
 .yellow-background{
@@ -49,8 +47,17 @@ img{
   background-color: rgba(0, 0, 0, 0);
   user-select: none;
   -webkit-user-select: none;
-  /* touch-action: manipulation; */
   z-index: 4;
+}
+.info{
+    position: relative;
+    width: max-content;
+    top: -100%;
+    left: 20px;
+    z-index: 20;
+    border: 1px solid black;
+    padding: 5px;
+    background: rgba(255, 255, 255, .5);
 }
 .button:hover {
     color: #2973b8;
