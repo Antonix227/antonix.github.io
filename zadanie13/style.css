@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: 'Young Serif', serif;
 }
+#container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
 #headline{
     height: 10vh;
     background-color: beige;
@@ -46,4 +51,18 @@ img{
 }
 .button:hover {
     color: #2973b8;
+  }
+  @media screen and (max-width: 768px){
+    #container{
+        display: flex;
+        flex-direction: column;
+        /* align-content: stretch; */
+
+    }
+    #headline{
+        height:auto;
+    }
+    .photo{
+        height: 70vh;
+    }
   }
