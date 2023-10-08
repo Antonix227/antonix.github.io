@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Young Serif', serif;
+}
+#headline{
+    height: 10vh;
+    background-color: beige;
+    text-align: center;
+    padding: 10px;
+}
+.photo{
+    height: 80vh;
+    background-color: #2973b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.yellow-background{
+    background-color: #fee35d;
+}
+img{
+    max-height: 100%;
+}
+#changes{
+    background-color: beige;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  /* touch-action: manipulation; */
+  z-index: 4;
+}
+.button:hover {
+    color: #2973b8;
+  }
