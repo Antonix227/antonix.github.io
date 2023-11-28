@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100lvh;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+td{
+    width: 140px;
+    height: 140px;
+    text-align: center;    
+}
