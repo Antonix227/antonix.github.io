@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+	background: #829EB9;
+	height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+	background: #B3C6D9;
+	width: 25%;
+}
+
+main{
+	background: #E0E9F1;
+	width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+	background: #829EB9;
+	font-family: Arial;
+	text-align: right;
+	clear: both;
+    height: 10%;
+}
+.content{
+    display: flex;
+    height: 75%;
+}
+#container{
+    height: 100dvh;
+}
+a{
+    color: black;
+}
