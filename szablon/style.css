@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    /* display: grid;
+    grid-template-rows: auto 1fr auto; */
+    min-height: 100vh; /* sets the minimum height of the viewport to 100% */
+}
+#container{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header header"
+        "nav main main"
+        "footer footer footer";
+}
+header, nav, main, footer {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+header {
+    grid-area: header;
+    background-color: gainsboro;
+    
+}
+
+nav {
+    grid-area: nav;
+    background-color: cadetblue;
+}
+
+main {
+    grid-area: main;
+    background-color: limegreen;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blue;
+}
+
+.grid-container {
+
+}
