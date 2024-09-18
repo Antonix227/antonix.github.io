@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+tr:nth-child(2n+1){
+    background-color: #b0d5f1;
+}
+tr:nth-child(even){
+    background-color: #dfedfa;
+}
+tr:first-child{
+    background-color: #86c2e9; 
+}
+th{
+    color: #2a3846;
+}
+td, th{
+    padding: 1rem;
+
+}
+td{
+    color: #556269;
+}
+#container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+img{
+    max-width: 50%;
+}
