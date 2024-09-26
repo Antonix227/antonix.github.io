@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #006d77;
+}
+p{
+    font-family: "Oswald", sans-serif;
+    color: #edf6f9;
+    font-size: 25px;
+    text-align: center;
+}
+.rzeczownik{
+    color: #83c5be;
+}
+.czasownik{
+    font-style: italic;
+    color: #e29578;
+}
+.przymiotnik{
+    color: #ffddd2;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    min-height: 100dvh;
+    flex-direction: column;
+}
+#pzyslowia{
+    border: 5px solid #edf6f9;
+    padding: 2rem;
+    border-radius: 5px;
+}
