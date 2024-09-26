@@ -30,9 +30,13 @@ p{
     width: 100dvw;
     min-height: 100dvh;
     flex-direction: column;
+    padding: .6rem;
 }
 #przyslowia{
     border: 5px solid #edf6f9;
     padding: 2rem;
     border-radius: 5px;
+}
+p:not(:last-child){
+    margin-bottom: .75rem;
 }
