@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    /* padding: 0; */
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+#container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 10% 80% 10%; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "nav nav nav"
+      "aside zaba zaba"
+      "footer footer footer"; 
+  }
+  img{
+    max-height: 100%;
+  }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1e4b0;
+    grid-area: nav; 
+    padding: 0 1.5rem;
+
+}
+.nav{
+    list-style-type: none;
+}
+.nav li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    /* margin-left: 10px;
+    border: 3px solid #b77959;
+    position: relative; */
+
+}
+.nav li a {
+    display: block;  /* Makes <a> a block-level element */
+    width: 100%;     /* Ensures it takes up the full width of the <li> */
+    text-decoration: none;
+    border: 3px outset green;
+    padding: .5rem 0; 
+    background: white;/* Optional: Removes underline from links */
+}
+.zaba{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    z-index: 200;
+}
+a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #03d4ff;
+    transition: .5s;
+    z-index: -1;
+}
+a:hover::before{
+    width: 100%;
+    transition: .5s
+}
+a:visited{
+    color: green;
+}
+.slimak{
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    align-items: stretch;
+    max-height: 100%;
+}
+.slimak img{
+    max-height: 100%;
+}
+ol li{
+    color: red;
+}
+.zaby{
+    list-style-type:disc;
+}
+.zaby li{
+    color: #385828;
+}
+.ropuchy{
+    list-style-type: square;
+}
+.ropuchy li{
+    color: #7f7f7f;
+}
+aside { grid-area: aside; 
+    background-color: #fefbda;
+    padding: 15px;
+}
+main { grid-area: zaba; }
+footer { grid-area: footer; 
+background-color: #ff7f27;
+}
